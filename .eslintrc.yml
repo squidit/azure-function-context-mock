@@ -1,0 +1,14 @@
+---
+extends: "airbnb"
+rules:
+  no-var:
+    - 0
+  no-console:
+    - 0
+  no-undef:
+    - 0
+ecmaFeatures:
+  modules: true
+env:
+  es6: false
+  node: true

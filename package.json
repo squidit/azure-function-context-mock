@@ -1,0 +1,28 @@
+{
+  "name": "azure-function-context-mock",
+  "version": "0.0.1",
+  "description": "Simple object to mock context in test when use Function App from Azure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limafelipe/azure-function-context-mock.git"
+  },
+  "author": "Felipe Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limafelipe/azure-function-context-mock/issues"
+  },
+  "homepage": "https://github.com/limafelipe/azure-function-context-mock#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1"
+  }
+}
