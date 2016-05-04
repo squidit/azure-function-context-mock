@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/azure-function-context-mock.svg)](https://badge.fury.io/js/azure-function-context-mock)
+
 # azure-function-context-mock
 
 > Simple object to mock context in tests when use Function App from Azure.
