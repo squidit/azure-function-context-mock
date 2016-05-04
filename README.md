@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/azure-function-context-mock.svg)](https://badge.fury.io/js/azure-function-context-mock)
+[![Build Status](https://travis-ci.org/limafelipe/azure-function-context-mock.svg?branch=master)](https://travis-ci.org/limafelipe/azure-function-context-mock)
 
 # azure-function-context-mock
 
