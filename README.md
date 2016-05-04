@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install --save-dev https://github.com/limafelipe/azure-function-context-mock.git
+$ npm install --save-dev azure-function-context-mock
 ```
 
 
