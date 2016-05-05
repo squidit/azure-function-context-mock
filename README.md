@@ -30,7 +30,7 @@ describe('my awsome tests', function () {
 
 ## Context Object
 #### `done` => `Promise`
-Returns a `Promise` to you can know when the funcion finish in your test.
+Returns a `Promise` with a object with properties `res` and `bindings` to you can know when the function finishes in your test and ensure your output.
 
 #### `log` => `void`
 Execute `console.log` to facilitate yours logs outside Azure.
