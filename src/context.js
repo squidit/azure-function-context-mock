@@ -1,6 +1,6 @@
 var context = {
   done: function done() {
-    return Promise.resolve();
+    return Promise.resolve(this.res);
   },
   log: function log(str) {
     console.log(str);

@@ -21,9 +21,19 @@ describe('context', function () {
     done();
   });
 
-  it('Must return a Promise when execute function context.done()', function (done) {
+  it('Must return a Promise when call function context.done()', function (done) {
     expect(context.done()).to.be.an('Promise');
     done();
+  });
+
+  it('Must return a res object like result when execute function context.done()', function (done) {
+    context.done()
+      .then(res => {
+        expect(res).to.be.an('object');
+        expect(res).to.have.property('status');
+        expect(res).to.have.property('body');
+        done();
+      });
   });
 
   it('Must return a context object with property res contains own properties', function (done) {
