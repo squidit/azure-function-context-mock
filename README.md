@@ -38,5 +38,8 @@ Execute `console.log` to facilitate yours logs outside Azure.
 #### `bindings` => `Object`
 Just a empty object to you can set any binding and it's not undefined.
 
+#### `res` => `Object`
+Default `res` object with status *200* and body string empty.
+
 
 To more information about `context` access [Azure docs](https://azure.microsoft.com/en-us/documentation/articles/functions-reference-node/).
