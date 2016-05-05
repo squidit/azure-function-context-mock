@@ -26,12 +26,31 @@ describe('context', function () {
     done();
   });
 
-  it('Must return a res object like result when execute function context.done()', function (done) {
+  it('Must return result in context.done() with res and bindings', function (done) {
     context.done()
-      .then(res => {
-        expect(res).to.be.an('object');
-        expect(res).to.have.property('status');
-        expect(res).to.have.property('body');
+      .then(result => {
+        expect(result).to.be.an('object');
+        expect(result).to.have.property('res');
+        expect(result).to.have.property('bindings');
+        done();
+      });
+  });
+
+  it('Must return a res object like a property in result in context.done()', function (done) {
+    context.done()
+      .then(result => {
+        expect(result.res).to.be.an('object');
+        expect(result.res).to.have.property('status');
+        expect(result.res).to.have.property('body');
+        done();
+      });
+  });
+
+  it('Must return a bindings object like a property in result in context.done()', function (done) {
+    context.done()
+      .then(result => {
+        expect(result.bindings).to.be.an('object');
+        expect(Object.keys(result.bindings)).to.have.length(0);
         done();
       });
   });
