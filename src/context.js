@@ -6,6 +6,10 @@ var context = {
     console.log(str);
   },
   bindings: {},
+  res: {
+    status: 200, /* Defaults to 200 */
+    body: '',
+  },
 };
 
 module.exports = context;

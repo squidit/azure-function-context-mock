@@ -25,4 +25,23 @@ describe('context', function () {
     expect(context.done()).to.be.an('Promise');
     done();
   });
+
+  it('Must return a context object with property res contains own properties', function (done) {
+    expect(context.res).to.be.an('object');
+    expect(context.res).to.have.property('status');
+    expect(context.res).to.have.property('body');
+    done();
+  });
+
+  it('Must return 200 in status like default res object', function (done) {
+    expect(context.res.status).to.be.an('number');
+    expect(context.res.status).to.be.equal(200);
+    done();
+  });
+
+  it('Must return empty string in body like default res object', function (done) {
+    expect(context.res.body).to.be.an('string');
+    expect(context.res.body).to.be.equal('');
+    done();
+  });
 });
