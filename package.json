@@ -1,6 +1,6 @@
 {
   "name": "azure-function-context-mock",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple object to mock context in test when use Function App from Azure.",
   "main": "index.js",
   "scripts": {
